@@ -16,7 +16,13 @@
           transform: rotate(360deg);
         }
     }
+    & .nav-item{
+        margin: 15px;
+    }
     & .nav-link{
         color: white;
+        &:hover{
+            color:black
+        }
     }
 }

@@ -1,9 +1,16 @@
 /*footer*/
-.pie{
+.pie {
     border-radius: 6px;
-    background: $main-background-menu  !important; 
-    .img{
-        width: 2rem;
-    }      
-}
+    background: $main-background-menu !important;
 
+    .pie-div {
+        color: black;
+        font-family: Oswald;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .img {
+        width: 2rem;
+    }
+}

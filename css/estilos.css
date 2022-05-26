@@ -13,8 +13,12 @@
     transition: .5s; }
     .navbar img:hover {
       transform: rotate(360deg); }
+  .navbar .nav-item {
+    margin: 15px; }
   .navbar .nav-link {
     color: white; }
+    .navbar .nav-link:hover {
+      color: black; }
 
 /*carrusel*/
 .contenido {
@@ -31,5 +35,10 @@
 .pie {
   border-radius: 6px;
   background: #BC3C32 !important; }
+  .pie .pie-div {
+    color: black;
+    font-family: Oswald;
+    font-weight: bold;
+    text-decoration: none; }
   .pie .img {
     width: 2rem; }
