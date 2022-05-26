@@ -1,0 +1,35 @@
+/*header*/
+.navbar {
+  border-radius: 6px !important;
+  background: #BC3C32 !important;
+  margin: 5px auto;
+  font-family: Oswald;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+  .navbar img {
+    width: 15rem;
+    transition: .5s; }
+    .navbar img:hover {
+      transform: rotate(360deg); }
+  .navbar .nav-link {
+    color: white; }
+
+/*carrusel*/
+.contenido {
+  background: #FCD391;
+  padding: 5rem;
+  border-radius: 6px; }
+  .contenido .carousel-item h5, .contenido p {
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: Oswald;
+    font-weight: bold; }
+
+/*footer*/
+.pie {
+  border-radius: 6px;
+  background: #BC3C32 !important; }
+  .pie .img {
+    width: 2rem; }
