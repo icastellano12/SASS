@@ -1,0 +1,37 @@
+/*contenido*/
+.contenido{
+    background:$main-background-cuerpo ;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.contenido-hacemos p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*productos*/
+.h1 {
+    padding: 20px;
+    text-align: center;
+    color: rgb(191, 35, 35);
+    font-family: Oswald;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#galeria .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+
+        &:hover {
+            border: 5px solid #BC3C32;
+        }
+    }
+}

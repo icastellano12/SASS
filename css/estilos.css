@@ -132,3 +132,33 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     text-decoration: none; }
   .pie .img {
     width: 2rem; }
+
+/*contenido*/
+.contenido {
+  background: #FCD391;
+  padding: 0.5rem;
+  border-radius: 6px; }
+
+.contenido-hacemos p {
+  line-height: 1.5;
+  text-align: justify; }
+
+/*productos*/
+.h1 {
+  padding: 20px;
+  text-align: center;
+  color: #bf2323;
+  font-family: Oswald;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px; }
+  #galeria .col-lg-4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; }
+    #galeria .col-lg-4 img:hover {
+      border: 5px solid #BC3C32; }

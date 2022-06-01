@@ -1,7 +1,11 @@
 /*slider*/
+@mixin itemsCentrado {
+    align-items: center;
+}
+
 main {
     display: flex;
-    align-items: center;
+    @include itemsCentrado;
     justify-content: center;
     padding: 30px;
     background: #FCD391;
@@ -47,7 +51,7 @@ main {
     left: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    @include itemsCentrado;
     justify-content: center;
     width: 100%;
 
@@ -56,7 +60,7 @@ main {
 .pagination-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    @include itemsCentrado;
     border: 2px solid white;
     width: 16px;
     height: 16px;
