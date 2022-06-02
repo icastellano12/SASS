@@ -3,6 +3,8 @@
     align-items: center;
 }
 
+
+
 main {
     display: flex;
     @include itemsCentrado;
@@ -15,8 +17,8 @@ main {
 .contenido-all {
     position: relative;
     max-width: 1000px;
-    width: 100%;
-    border-radius: 6px;
+    width: map-get($caract, ancho);
+    border-radius: map-get($caract, radio);
     overflow: hidden;
 }
 
@@ -53,7 +55,7 @@ main {
     flex-wrap: wrap;
     @include itemsCentrado;
     justify-content: center;
-    width: 100%;
+    width: map-get($caract, ancho);
 
 }
 

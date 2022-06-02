@@ -1,6 +1,6 @@
 /*header*/
 .navbar{
-    border-radius: 6px !important;
+    border-radius: map-get($caract, radio) !important;
     background: $main-background-menu!important;
     margin: 5px auto;
     font-family: Oswald;

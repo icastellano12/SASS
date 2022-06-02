@@ -1,8 +1,14 @@
 /*contenido*/
+@mixin estiloletra {
+    font-family: Oswald;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 .contenido{
     background:$main-background-cuerpo ;
     padding: 0.5rem;
-    border-radius: 6px;
+    border-radius: map-get($caract, radio);
 }
 
 .contenido-hacemos p{
@@ -15,10 +21,7 @@
     padding: 20px;
     text-align: center;
     color: rgb(191, 35, 35);
-    font-family: Oswald;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
+    @include estiloletra;   
 }
 
 #galeria .col-lg-4 {
@@ -26,7 +29,7 @@
     padding: 25px;
 
     img {
-        width: 100%;
+        width: map-get($caract, ancho);
         height: 100%;
         border-radius: 10px;
 

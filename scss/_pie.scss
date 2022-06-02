@@ -1,6 +1,6 @@
 /*footer*/
 .pie {
-    border-radius: 6px;
+    border-radius: map-get($caract, radio);
     background: $main-background-menu !important;
 
     .pie-div {
