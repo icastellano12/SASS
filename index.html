@@ -8,7 +8,7 @@
   <meta name="descripcion"
     content="Productos libres del gluten Elaboramos productos recien horneados y congelados, para todas aquellas personas que necesiten hacer una dieta con alimentos libres de TACC o por decisión de una vida mas saludable. ">
   <meta name="keywords" content="sin tacc, celiacos, salud">
-    <link rel="shortcut icon " href="./imagenes/logito.png">
+  <link rel="shortcut icon " href="./imagenes/logito.png">
   <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -26,6 +26,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
   <!-- animacion-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--iconos-->
+  <script src="https://kit.fontawesome.com/aa14ac9a72.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -50,9 +52,6 @@
             <a class="nav-link" href="./html/vender.html">Vender</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./html/locales.html">Locales</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="./html/contacto.html">Contacto</a>
           </li>
         </ul>
@@ -60,7 +59,13 @@
     </div>
   </nav>
 
-  <main>   
+
+  <main class="contenido__menu">
+    <div  class="h1 text-center lh-lg">
+      <h1> DE BUEN CHIPA - PRODUCTOS SIN TACC</h1>
+      <h2>Nuestros productos se encuentran publicados en el listado nacional de alimentos libres de gluten de  <a href="https://listadoalg.anmat.gob.ar/Home"> A.N.M.A.T.</a></h2>
+    </div>
+    <section class="contenido__menu__slider">
     <div class="contenido-all">
       <input type="radio" id="1" name="image-slide" hidden />
       <input type="radio" id="2" name="image-slide" hidden />
@@ -68,7 +73,7 @@
 
       <div class="slide">
         <div class="item-slide">
-          <img src="./imagenes/Productos/chipa.jpeg"  alt="productos sin tacc">
+          <img src="./imagenes/Productos/chipa.jpeg" alt="productos sin tacc">
         </div>
 
         <div class="item-slide">
@@ -94,33 +99,37 @@
           <img src="./imagenes/Productos/alfchoco.jpeg" alt="productos sin tacc">
         </label>
       </div>
+    </section>
   </main>
 
-  <footer class="pie d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top text-danger">
-    <div class="col-md-4 d-flex align-items-center text-danger pie-div">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="40" height="60">
-
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-muted texto">Copyright 2022. Todos los derechos reservados - De buen chipa</span>
+  <footer>
+    <div class="container__footer">
+      <div class="box__footer">
+        <div class="logo">
+          <img src="./imagenes/logito.png" alt="logo">
+        </div>
+      </div>
+      <div class="box__footer">
+        <h2>Menu</h2>
+        <a href="index.html">Inicio</a>
+        <a href="./html/que-hacemos.html">Que hacemos</a>
+        <a href="./html/productos.html">Productos</a>
+        <a href="./html/vender.html">Vender</a>
+        <a href="./html/contacto.html">Contacto</a>
+      </div>
+      <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="https://www.facebook.com/debuenchipa"><i class="fab fa-facebook-square"></i>Facebook</a>
+        <a href="https://www.instagram.com/debuenchipa"><i class="fab fa-instagram-square"></i>Instagram</a>
+        <a href="#"><i class="fab fa-whatsapp-square"></i>whatsapp</a>
+      </div>
     </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/debuenchipa"><img class="img"
-            src="./imagenes/whatsapp.png" alt="redes sociales"><svg class="bi" width="24" height="24">
-            <use xlink:href="#whatsapp"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/debuenchipa"><img class="img"
-            src="./imagenes/instagram.png" alt="redes sociales"><svg class="bi" width="24" height="24">
-            <use xlink:href="#instagram"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/debuenchipa"><img class="img"
-            src="./imagenes/facebook.png" alt="redes sociales"><svg class="bi" width="24" height="24">
-            <use xlink:href="#facebook"></use>
-          </svg></a></li>
-    </ul>
+    <div class="box__copyright">
+      <hr>
+      <p>Todos los derechos reservados@ 2022
+        <b>Debuenchipa</b>
+      </p>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

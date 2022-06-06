@@ -5,28 +5,118 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-.contenido{
-    background:$main-background-cuerpo ;
+
+.contenido {
+    font-family: oswald;
+    font-weight: bold;
+    background: $main-background-cuerpo;
     padding: 0.5rem;
     border-radius: map-get($caract, radio);
 }
 
-.contenido-hacemos p{
+.contenido__hacemos .h2 {
     line-height: 1.5;
     text-align: justify;
 }
 
+/*que hacemos cuadros*/
+.contenido__cuadros {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.contenido__cuadros .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: $main-background-menu;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contenido__cuadros .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.contenido__cuadros .box .icon:hover {
+    top: 20px;
+    left: calc(50%-40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contenido__cuadros .box .icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    font-size: 100px;
+    width: 50%;
+}
+
+.contenido__cuadros .box .icon img:hover {
+    height: 40px;
+}
+
+.contenido__cuadros .box .content {
+    position: absolute;
+    height: calc(100%-10px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 100%;
+    transition: 0.5s;
+}
+
+.contenido__cuadros .box:hover .content {
+    top: 100px;
+}
+
+.contenido__cuadros .box .content h3 {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.contenido__cuadros .box .content p {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.contenido__texto h3 {
+    text-align: justify;
+}
+
+.contenido__video {
+  width: 70%;
+   }
+
 /*productos*/
-.h1 {
+.contenido__hacemos .h1 {
     padding: 20px;
     text-align: center;
     color: rgb(191, 35, 35);
-    @include estiloletra;   
+    @include estiloletra;
 }
 
-#galeria .col-lg-4 {
-    margin: 0 !important;
-    padding: 25px;
+#galeria .card {
+    margin: 10px 10px !important;
+    padding: 10px  !important;
 
     img {
         width: map-get($caract, ancho);
@@ -38,3 +128,5 @@
         }
     }
 }
+
+/*vender*/
