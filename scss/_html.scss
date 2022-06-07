@@ -11,6 +11,7 @@
     font-weight: bold;
     background: $main-background-cuerpo;
     padding: 0.5rem;
+    margin-bottom: 5px;
     border-radius: map-get($caract, radio);
 }
 
@@ -20,91 +21,82 @@
 }
 
 /*que hacemos cuadros*/
-.contenido__cuadros {
-    position: relative;
-    width: 1200px;
-    height: 300px;
-    margin: 50px auto;
-}
 
-.contenido__cuadros .box {
+.box {
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
     background: $main-background-menu;
     float: left;
-    margin: 15px;
+    margin: auto;
+    margin-bottom: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
-}
 
-.contenido__cuadros .box .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    transition: 0.5s;
-    z-index: 1;
-}
+    .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        transition: 0.5s;
+        z-index: 1;
 
-.contenido__cuadros .box .icon:hover {
-    top: 20px;
-    left: calc(50%-40px);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
+        &:hover {
+            top: 20px;
+            left: calc(50%-40px);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
 
-.contenido__cuadros .box .icon img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
-    font-size: 100px;
-    width: 50%;
-}
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+            font-size: 100px;
+            width: 50%;
 
-.contenido__cuadros .box .icon img:hover {
-    height: 40px;
-}
+            &:hover {
+                height: 40px;
+            }
+        }
+    }
 
-.contenido__cuadros .box .content {
-    position: absolute;
-    height: calc(100%-10px);
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    top: 100%;
-    transition: 0.5s;
-}
+    .content {
+        position: absolute;
+        height: calc(100%-10px);
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        top: 100%;
+        transition: 0.5s;
 
-.contenido__cuadros .box:hover .content {
-    top: 100px;
-}
+        h3 {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
 
-.contenido__cuadros .box .content h3 {
-    margin: 0;
-    padding: 0;
-    color: black;
-}
+        p {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+    }
 
-.contenido__cuadros .box .content p {
-    margin: 0;
-    padding: 0;
-    color: black;
-}
+    &:hover .content {
+        top: 100px;
+    }
 
-.contenido__texto h3 {
-    text-align: justify;
+    .contenido__texto h3 {
+        text-align: justify;
+    }
 }
-
-.contenido__video {
-  width: 70%;
-   }
 
 /*productos*/
 .contenido__hacemos .h1 {
@@ -115,13 +107,12 @@
 }
 
 #galeria .card {
-    margin: 10px 10px !important;
-    padding: 10px  !important;
+    margin: 10px auto !important;
+    padding: 5px;
 
     img {
-        width: map-get($caract, ancho);
-        height: 100%;
         border-radius: 10px;
+
 
         &:hover {
             border: 5px solid #BC3C32;
@@ -130,3 +121,57 @@
 }
 
 /*vender*/
+
+
+/*contacto*/
+
+.formulario {
+    width: auto;
+    background-color: blanchedalmond;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 2rem;
+    border-radius: 6px;
+
+}
+
+.control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.boton {
+    width: 100%;
+    background: gray;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+select {
+    margin-bottom: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+
+.rof {
+    padding: 10px;
+}
+
+#comentarios {
+    width: 100%;
+    padding: 60px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}

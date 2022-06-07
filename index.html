@@ -32,105 +32,116 @@
 
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light text-danger">
-    <div class="container" d-flex>
-      <a class="navbar-brand me-auto" href="./index.html"><img src="./imagenes/logito.png" class="img-fluid"
-          alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./html/que-hacemos.html">Que hacemos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./html/productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./html/vender.html">Vender</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./html/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <main class="contenido__menu">
-    <div  class="h1 text-center lh-lg">
-      <h1> DE BUEN CHIPA - PRODUCTOS SIN TACC</h1>
-      <h2>Nuestros productos se encuentran publicados en el listado nacional de alimentos libres de gluten de  <a href="https://listadoalg.anmat.gob.ar/Home"> A.N.M.A.T.</a></h2>
-    </div>
-    <section class="contenido__menu__slider">
-    <div class="contenido-all">
-      <input type="radio" id="1" name="image-slide" hidden />
-      <input type="radio" id="2" name="image-slide" hidden />
-      <input type="radio" id="3" name="image-slide" hidden />
-
-      <div class="slide">
-        <div class="item-slide">
-          <img src="./imagenes/Productos/chipa.jpeg" alt="productos sin tacc">
+  <div class="container-fluid">
+    <header class="row">
+      <nav class="navbar navbar-expand-lg bg-light text-danger">
+        <div class="container" d-flex>
+          <a class="navbar-brand me-auto" href="./index.html"><img src="./imagenes/logito.png" class="img-fluid"
+              alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./html/que-hacemos.html">Que hacemos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./html/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/vender.html">Vender</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="item-slide">
-          <img src="./imagenes/Productos/medialunas.jpeg" alt="productos sin tacc">
+
+    <main class="contenido row">
+      <Section class="contenido__hacemos row">
+        <div class="h1 text-center lh-lg col-lg-12">
+          <h1> DE BUEN CHIPA - PRODUCTOS SIN TACC</h1>
         </div>
-
-        <div class="item-slide">
-          <img src="./imagenes/Productos/alfchoco.jpeg" alt="productos sin tacc">
+        <div class="contenido__hacemos fw-bold col-lg-12">
+          <h2>Nuestros productos se encuentran publicados en el listado nacional de alimentos libres de gluten de <a
+              href="https://listadoalg.anmat.gob.ar/Home"> A.N.M.A.T.</a></h2>
         </div>
+      </Section>
 
-      </div>
+      <section class="contenido__menu__slider">
+        <div class="contenido-all">
+          <input type="radio" id="1" name="image-slide" hidden />
+          <input type="radio" id="2" name="image-slide" hidden />
+          <input type="radio" id="3" name="image-slide" hidden />
 
-      <div class="pagination">
-        <label class="pagination-item" for="1">
-          <img src="./imagenes/Productos/chipa.jpeg" alt="productos sin tacc">
-        </label>
+          <div class="slide">
+            <div class="item-slide">
+              <img src="./imagenes/Productos/chipa.jpeg" alt="productos sin tacc">
+            </div>
 
-        <label class="pagination-item" for="2">
-          <img src="./imagenes/Productos/medialunas.jpeg" alt="productos sin tacc">
-        </label>
+            <div class="item-slide">
+              <img src="./imagenes/Productos/medialunas.jpeg" alt="productos sin tacc">
+            </div>
 
-        <label class="pagination-item" for="3">
-          <img src="./imagenes/Productos/alfchoco.jpeg" alt="productos sin tacc">
-        </label>
-      </div>
-    </section>
-  </main>
+            <div class="item-slide">
+              <img src="./imagenes/Productos/alfchoco.jpeg" alt="productos sin tacc">
+            </div>
 
-  <footer>
-    <div class="container__footer">
-      <div class="box__footer">
-        <div class="logo">
-          <img src="./imagenes/logito.png" alt="logo">
+          </div>
+
+          <div class="pagination">
+            <label class="pagination-item" for="1">
+              <img src="./imagenes/Productos/chipa.jpeg" alt="productos sin tacc">
+            </label>
+
+            <label class="pagination-item" for="2">
+              <img src="./imagenes/Productos/medialunas.jpeg" alt="productos sin tacc">
+            </label>
+
+            <label class="pagination-item" for="3">
+              <img src="./imagenes/Productos/alfchoco.jpeg" alt="productos sin tacc">
+            </label>
+          </div>
+      </section>
+    </main>
+
+    <footer class="row">
+      <div class="container__footer">
+        <div class="box__footer col-lg-3 col-md-6 col-sm-12">
+          <div class="logo">
+            <img src="./imagenes/logito.png" alt="logo">
+          </div>
+        </div>
+        <div class="box__footer col-lg-3 col-md-6 col-sm-12">
+          <h2>Menu</h2>
+          <a href="index.html">Inicio</a>
+          <a href="./html/que-hacemos.html">Que hacemos</a>
+          <a href="./html/productos.html">Productos</a>
+          <a href="./html/vender.html">Vender</a>
+          <a href="./html/contacto.html">Contacto</a>
+        </div>
+        <div class="box__footer col-lg-3 col-md-6 col-sm-12">
+          <h2>Redes Sociales</h2>
+          <a href="https://www.facebook.com/debuenchipa"><i class="fab fa-facebook-square"></i>Facebook</a>
+          <a href="https://www.instagram.com/debuenchipa"><i class="fab fa-instagram-square"></i>Instagram</a>
+          <a href="#"><i class="fab fa-whatsapp-square"></i>whatsapp</a>
         </div>
       </div>
-      <div class="box__footer">
-        <h2>Menu</h2>
-        <a href="index.html">Inicio</a>
-        <a href="./html/que-hacemos.html">Que hacemos</a>
-        <a href="./html/productos.html">Productos</a>
-        <a href="./html/vender.html">Vender</a>
-        <a href="./html/contacto.html">Contacto</a>
+      <div class="box__copyright col-lg-12">
+        <hr>
+        <p>Todos los derechos reservados@ 2022
+          <b>Debuenchipa</b>
+        </p>
       </div>
-      <div class="box__footer">
-        <h2>Redes Sociales</h2>
-        <a href="https://www.facebook.com/debuenchipa"><i class="fab fa-facebook-square"></i>Facebook</a>
-        <a href="https://www.instagram.com/debuenchipa"><i class="fab fa-instagram-square"></i>Instagram</a>
-        <a href="#"><i class="fab fa-whatsapp-square"></i>whatsapp</a>
-      </div>
-    </div>
-    <div class="box__copyright">
-      <hr>
-      <p>Todos los derechos reservados@ 2022
-        <b>Debuenchipa</b>
-      </p>
-    </div>
-  </footer>
+
+    </footer>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
