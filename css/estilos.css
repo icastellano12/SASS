@@ -8,11 +8,13 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5rem; }
-  .navbar img {
-    width: 15rem;
+  .navbar .logo {
+    width: 8rem;
     transition: .5s; }
-    .navbar img:hover {
+    .navbar .logo:hover {
       transform: rotate(360deg); }
+  .navbar button .menu {
+    width: 2rem; }
   .navbar .nav-item {
     margin: 15px; }
   .navbar .nav-link {
@@ -23,7 +25,8 @@
 /*slider*/
 .contenido__menu__slider {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 15px; }
   .contenido__menu__slider .contenido-all {
     position: relative;
     max-width: 1000px;
@@ -123,13 +126,13 @@ footer {
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 40px; }
+    margin-top: 10px; }
     footer .container__footer .box__footer {
       display: flex;
       flex-direction: column;
-      padding: 20px; }
+      padding: 2px; }
       footer .container__footer .box__footer .logo img {
-        width: 150px; }
+        width: 130px; }
       footer .container__footer .box__footer h2 {
         margin-bottom: 3px;
         color: #343434;
@@ -140,7 +143,7 @@ footer {
         color: white;
         font-weight: 600px;
         text-decoration: none;
-        font-size: 11px; }
+        font-size: 13px; }
         footer .container__footer .box__footer a:hover {
           color: black; }
         footer .container__footer .box__footer a .fab {
@@ -168,9 +171,21 @@ footer {
   margin-bottom: 5px;
   border-radius: 6px; }
 
+.contenido__hacemos .h1 {
+  padding: 10px;
+  text-align: center;
+  color: #bf2323;
+  font-family: Oswald;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 .contenido__hacemos .h2 {
-  line-height: 1.5;
-  text-align: justify; }
+  line-height: 0.5;
+  text-align: center; }
+  .contenido__hacemos .h2 a {
+    font-size: 25px;
+    color: black; }
 
 /*que hacemos cuadros*/
 .box {
@@ -231,15 +246,6 @@ footer {
     text-align: justify; }
 
 /*productos*/
-.contenido__hacemos .h1 {
-  padding: 20px;
-  text-align: center;
-  color: #bf2323;
-  font-family: Oswald;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase; }
-
 #galeria .card {
   margin: 10px auto !important;
   padding: 5px; }

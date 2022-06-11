@@ -15,9 +15,21 @@
     border-radius: map-get($caract, radio);
 }
 
+.contenido__hacemos .h1 {
+    padding: 10px;
+    text-align: center;
+    color: rgb(191, 35, 35);
+    @include estiloletra;
+}
+
+
 .contenido__hacemos .h2 {
-    line-height: 1.5;
-    text-align: justify;
+    line-height: 0.5;
+    text-align: center;
+    a{
+        font-size: 25px;
+        color: black;
+    }
 }
 
 /*que hacemos cuadros*/
@@ -99,12 +111,6 @@
 }
 
 /*productos*/
-.contenido__hacemos .h1 {
-    padding: 20px;
-    text-align: center;
-    color: rgb(191, 35, 35);
-    @include estiloletra;
-}
 
 #galeria .card {
     margin: 10px auto !important;
