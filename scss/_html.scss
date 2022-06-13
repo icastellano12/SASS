@@ -1,3 +1,4 @@
+
 /*contenido*/
 @mixin estiloletra {
     font-family: Oswald;
@@ -35,18 +36,23 @@
 
 /*que hacemos cuadros*/
 
+.contenido__texto .h2{
+    line-height: 0.5;
+    text-align: justify;
+    padding: 10px;
+}
+
 .box {
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 30px);
     background: $main-background-menu;
-    float: left;
+    // float: left;
     margin: auto;
     margin-bottom: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
-    align-items: center;
     .icon {
         position: absolute;
         top: 0;
@@ -106,6 +112,7 @@
          top: 100px;
      }
 }
+
 
 /*productos*/
 

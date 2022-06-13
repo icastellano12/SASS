@@ -189,18 +189,21 @@ footer {
     color: black; }
 
 /*que hacemos cuadros*/
+.contenido__texto .h2 {
+  line-height: 0.5;
+  text-align: justify;
+  padding: 10px; }
+
 .box {
   position: relative;
   width: calc(400px - 30px);
   height: calc(300px - 30px);
   background: #BC3C32;
-  float: left;
   margin: auto;
   margin-bottom: 15px;
   box-sizing: border-box;
   overflow: hidden;
-  border-radius: 10px;
-  align-items: center; }
+  border-radius: 10px; }
   .box .icon {
     position: absolute;
     top: 0;
