@@ -1,4 +1,3 @@
-
 /*contenido*/
 @mixin estiloletra {
     font-family: Oswald;
@@ -23,12 +22,12 @@
     @include estiloletra;
 }
 
-
 .contenido__hacemos .h2 {
     line-height: 0.5;
     text-align: justify;
     padding: 10px;
-    a{
+
+    a {
         font-size: 25px;
         color: black;
     }
@@ -36,7 +35,7 @@
 
 /*que hacemos cuadros*/
 
-.contenido__texto .h2{
+.contenido__texto .h2 {
     line-height: 0.5;
     text-align: justify;
     padding: 10px;
@@ -44,15 +43,15 @@
 
 .box {
     position: relative;
-    width: calc(400px - 30px);
-    height: calc(300px - 30px);
+    width: 370px;
+    height: 270px;
     background: $main-background-menu;
-    // float: left;
-    margin: auto;
+    margin: 0 auto 0;
     margin-bottom: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+
     .icon {
         position: absolute;
         top: 0;
@@ -60,29 +59,15 @@
         width: 30%;
         height: 30%;
         background: white;
-        // transition: 0.5s;
         z-index: 1;
-
-        // &:hover {
-        //     top: 20px;
-        //     left: calc(50%-40px);
-        //     width: 80px;
-        //     height: 80px;
-        //     border-radius: 50%;
-        // }
 
         img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            // transition: 0.5s;
             font-size: 100px;
             width: 50%;
-
-            // &:hover {
-            // height: 40px;
-            //  }
         }
     }
 
@@ -109,23 +94,33 @@
     }
 
     &:hover .content {
-         top: 100px;
-     }
+        top: 100px;
+    }
 }
 
 
 /*productos*/
 
-#galeria .card {
-    margin: 10px auto !important;
-    padding: 5px;
+#galeria {
+    .row {
+        margin: auto;
 
-    img {
-        border-radius: 10px;
+    }
+
+    .card {
+        margin: 10px auto !important;
+        padding: 5px;
+
+        img {
+            border-radius: 10px;
 
 
-        &:hover {
-            border: 5px solid #BC3C32;
+            &:hover {
+                border: 5px solid #BC3C32;
+            }
+        }
+        .card-body .card-text{
+            text-align: justify;
         }
     }
 }
