@@ -253,7 +253,10 @@ footer {
   #galeria .card .card-body .card-text {
     text-align: justify; }
 
-/*vender*/
+/*donde estamos*/
+.contacto {
+  text-align: center; }
+
 /*contacto*/
 .formulario {
   width: auto;
