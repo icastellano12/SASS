@@ -120,7 +120,8 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 footer {
   background: #BC3C32;
   border-radius: 6px;
-  padding: 5px; }
+  padding: 5px;
+  margin: 5px 0px; }
   footer .container__footer {
     display: flex;
     flex-wrap: wrap;
@@ -200,7 +201,7 @@ footer {
   width: 370px;
   height: 270px;
   background: #BC3C32;
-  margin: 0 auto 0;
+  margin: 20px auto 20px;
   margin-bottom: 15px;
   box-sizing: border-box;
   overflow: hidden;
@@ -259,14 +260,15 @@ footer {
 
 /*contacto*/
 .formulario {
-  width: auto;
+  width: 70%;
+  height: 50%;
   background-color: blanchedalmond;
   padding: 30px;
   margin: auto;
   margin-top: 50px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
-  font-size: 2rem;
+  font-size: 1rem;
   border-radius: 6px; }
 
 .control {
@@ -275,7 +277,7 @@ footer {
   border-radius: 4px;
   margin-bottom: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 .boton {
   width: 100%;
@@ -284,12 +286,12 @@ footer {
   padding: 12px;
   color: white;
   margin: 16px 0;
-  font-size: 18px; }
+  font-size: 14px; }
 
 select {
   margin-bottom: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 .rof {
   padding: 10px; }
@@ -300,4 +302,4 @@ select {
   border-radius: 4px;
   margin-bottom: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2rem; }
+  font-size: 1rem; }
