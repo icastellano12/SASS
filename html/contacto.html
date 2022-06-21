@@ -26,72 +26,68 @@
 
 
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container" d-flex>
-          <a class="navbar-brand me-auto" href="../index.html"><img src="../imagenes/logito.png" class=" logo img-fluid"
-              alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="../imagenes/icons8-menu-64.png" class="menu" alt="menuhamburguesa">
-          </button>
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../html/que-hacemos.html">Que hacemos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../html/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/donde-estamos.html">Donde estamos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container" d-flex>
+        <a class="navbar-brand me-auto" href="../index.html"><img src="../imagenes/logito.png" class=" logo img-fluid"
+            alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="../imagenes/icons8-menu-64.png" class="menu" alt="menuhamburguesa">
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../html/que-hacemos.html">Que hacemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../html/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/donde-estamos.html">Donde estamos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
 
-    <main class="contenido">
-      <section class="contenido__hacemos row">
-        <div class="h1 text-center lh-lg col-lg-12">
-          <h1> DE BUEN CHIPA - CONTACTO</h1>
+  <main class="contenido">
+    <section class="contenido__hacemos row">
+      <div class="h1 text-center lh-lg col-lg-12">
+        <h1> DE BUEN CHIPA - CONTACTO</h1>
+      </div>
+    </section>
+
+    <section>
+      <form class="formulario col-lg-4 col-md-6 col-sm-12">
+        <!-- comienza Formulario-->
+        <label for="Nombre">Nombre</label>
+        <input class="control" type="text" placeholder="Escribi tu Nombre" name="Nombre" required id="Nombre" />
+        <label for="email">E-mail</label>
+        <input class="control" type="email" placeholder="Escribi tu email" name="email" required id="email" />
+        <div class="rof">
+          <label>Revender</label>
+          <input type="radio" name="estacionFav" value="Revender" />
+          <label>Franquicias</label>
+          <input type="radio" name="estacionFav" value="Franquicias" />
         </div>
-      </section>
-
-      <section>
-        <form class="formulario col-lg-4 col-md-6 col-sm-12">
-          <!-- comienza Formulario-->
-          <label for="Nombre">Nombre</label>
-          <input class="control" type="text" placeholder="Escribi tu Nombre" name="Nombre" required id="Nombre" />
-          <label for="email">E-mail</label>
-          <input class="control" type="email" placeholder="Escribi tu email" name="email" required id="email" /> <br>
-          <br>
-          <div class="rof">
-            <label>Revender</label>
-            <input type="radio" name="estacionFav" value="Revender" />
-            <label>Franquicias</label>
-            <input type="radio" name="estacionFav" value="Franquicias" /> <br>
-          </div>
-          <br>
-          <label class="control">Provincia</label>
-          <select name="Provincia">
-            <option value="Provincia">Cordoba</option>
-            <option value="Provincia">Salta</option>
-            <option value="Provincia">Santiago del estero</option>
-            <option value="Provincia">Tucuman</option>
-            <option value="Provincia">Chaco</option>
-            <option value="Provincia">Jujuy</option>
-            <option value="Provincia">Catamarca</option>
-          </select>
-          <br> <br>
-
-          <label class="control " for="comentarios">Comentarios</label>
-          <textarea name="Comentarios" id="comentarios">
+        <label class="control">Provincia</label>
+        <select name="Provincia">
+          <option value="Provincia">Cordoba</option>
+          <option value="Provincia">Salta</option>
+          <option value="Provincia">Santiago del estero</option>
+          <option value="Provincia">Tucuman</option>
+          <option value="Provincia">Chaco</option>
+          <option value="Provincia">Jujuy</option>
+          <option value="Provincia">Catamarca</option>
+        </select>
+        <label class="control " for="comentarios">Comentarios</label>
+        <textarea name="Comentarios" id="comentarios">
 
 
 
@@ -100,43 +96,42 @@
 
         </textarea>
 
-          <br> <br>
+        <br>
 
-          <input class="boton" type="submit" />
-        </form>
-        <br> <br>
-      </section>
-    </main>
+        <input class="boton" type="submit" />
+      </form>
+    </section>
+  </main>
 
-    <footer class="row">
-      <div class="container__footer">
-        <div class="box__footer col-lg-3 col-md-6 col-sm-12">
-          <div class="logo">
-            <img src="../imagenes/logito.png" class="img-fluid" alt="logo">
-          </div>
-        </div>
-        <div class="box__footer col-lg-3 col-md-6 col-sm-12">
-          <h2>Menu</h2>
-          <a href="../index.html">Inicio</a>
-          <a href="./que-hacemos.html">Que hacemos</a>
-          <a href="./productos.html">Productos</a>
-          <a href="./vender.html">Vender</a>
-          <a href="./contacto.html">Contactos</a>
-        </div>
-        <div class="box__footer col-lg-3 col-md-6 col-sm-12">
-          <h2>Redes Sociales</h2>
-          <a href="https://www.facebook.com/debuenchipa"><i class="fab fa-facebook-square"></i>Facebook</a>
-          <a href="https://www.instagram.com/debuenchipa"><i class="fab fa-instagram-square"></i>Instagram</a>
-          <a href="#"><i class="fab fa-whatsapp-square"></i>whatsapp</a>
+  <footer class="row">
+    <div class="container__footer">
+      <div class="box__footer col-lg-3 col-md-6 col-sm-12">
+        <div class="logo">
+          <img src="../imagenes/logito.png" class="img-fluid" alt="logo">
         </div>
       </div>
-      <div class="box__copyright col-lg-12">
-        <hr>
-        <p>Todos los derechos reservados@ 2022
-          <b>Debuenchipa</b>
-        </p>
+      <div class="box__footer col-lg-3 col-md-6 col-sm-12">
+        <h2>Menu</h2>
+        <a href="../index.html">Inicio</a>
+        <a href="./que-hacemos.html">Que hacemos</a>
+        <a href="./productos.html">Productos</a>
+        <a href="./donde-estamos.html">Donde estamos</a>
+        <a href="./contacto.html">Contactos</a>
       </div>
-    </footer>
+      <div class="box__footer col-lg-3 col-md-6 col-sm-12">
+        <h2>Redes Sociales</h2>
+        <a href="https://www.facebook.com/debuenchipa"><i class="fab fa-facebook-square"></i>Facebook</a>
+        <a href="https://www.instagram.com/debuenchipa"><i class="fab fa-instagram-square"></i>Instagram</a>
+        <a href="#"><i class="fab fa-whatsapp-square"></i>whatsapp</a>
+      </div>
+    </div>
+    <div class="box__copyright col-lg-12">
+      <hr>
+      <p>Todos los derechos reservados@ 2022
+        <b>Debuenchipa</b>
+      </p>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>

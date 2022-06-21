@@ -198,10 +198,10 @@ footer {
 
 .box {
   position: relative;
-  width: 370px;
+  width: 350px;
   height: 270px;
   background: #BC3C32;
-  margin: 20px auto 20px;
+  margin: auto;
   margin-bottom: 15px;
   box-sizing: border-box;
   overflow: hidden;
@@ -260,8 +260,7 @@ footer {
 
 /*contacto*/
 .formulario {
-  width: 70%;
-  height: 50%;
+  width: 80%;
   background-color: blanchedalmond;
   padding: 30px;
   margin: auto;
