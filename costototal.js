@@ -1,4 +1,22 @@
-let gastoTotal = 0;
+const productos= [
+  {id: 1, name: "chipa", precio: 1700},
+  {id: 2, name: "medialunas", precio: 100},
+  {id: 3, name: "Pan", precio: 500},
+];
+
+let cant = prompt ("cantidad de productos que desea agregar");
+let i = 1;
+while (i <=cant){
+  const nuevoName = prompt ("Ingrese nombre del producto");
+  const nuevoPrecio = parseInt (prompt ("Ingrese precio"));
+  
+  productos.push ({id: productos.length + 1, name: nuevoName, precio: nuevoPrecio});
+    i=i+1;
+}
+
+console.log (productos);
+
+/* let gastoTotal = 0;
 let precioProducto = 0;
 let contador = 0;
 let precioDesc = 0;
@@ -43,3 +61,4 @@ ingresarPrecio();
 mostrarTotal();
 totalDesc();
 
+ */
