@@ -16,6 +16,8 @@ while (i <=cant){
 
 console.log (productos);
 
+//alert(JSON.stringify(productos));
+
 /* let gastoTotal = 0;
 let precioProducto = 0;
 let contador = 0;
