@@ -2,9 +2,12 @@ const productos= [
   {id: 1, name: "chipa", precio: 1700},
   {id: 2, name: "medialunas", precio: 100},
   {id: 3, name: "Pan", precio: 500},
+  {id: 4, name: "Pepas", precio: 1700},
+  {id: 5, name: "alfajores", precio: 80},
 ];
+alert ("Lista de productos \n\nChipa \nMedialunas \nPan \nPepas \nAlfajores");
 
-let name = prompt("Ingrese el nombre del producto el cual quiere aumentar");
+let name = prompt("Ingrese el nombre del producto que va aumentar");
 let encontrado = productos.find(producto => producto.name === name);
 let mensaje = `
   nombre: ${encontrado.name}
