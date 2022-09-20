@@ -5,9 +5,24 @@ const productos= [
   {id: 4, name: "Pepas", precio: 1700},
   {id: 5, name: "alfajores", precio: 80},
 ];
-alert ("Lista de productos \n\nChipa \nMedialunas \nPan \nPepas \nAlfajores");
 
-let name = prompt("Ingrese el nombre del producto que va aumentar");
+alert ("Lista de productos \n\nChipa $170 \nMedialunas $100 \nPan $500 \nPepas $1700 \nAlfajores $80");
+let precio = parseInt (prompt("Ingrese el precio minimo de los productos que desea aumentar el 20%"));
+const filtrados= productos.filter ((producto) => producto.precio > precio);
+filtrados.forEach((item) => {
+  let mensaje = `
+nombre: ${item.name}
+$${item.precio + item.precio * 0.2}
+`;
+
+console.log(mensaje);
+
+//alert(mensaje);
+
+});
+
+
+/* let name = prompt("Ingrese el nombre del producto que desea aumentar de precio");
 let encontrado = productos.find(producto => producto.name === name);
 let mensaje = `
   nombre: ${encontrado.name}
@@ -15,8 +30,11 @@ let mensaje = `
  `;
 
   alert(mensaje);
+ */
 
- 
+  
+
+
 /* const productos= [
   {id: 1, name: "chipa", precio: 1700},
   {id: 2, name: "medialunas", precio: 100},
