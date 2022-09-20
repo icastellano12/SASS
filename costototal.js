@@ -4,6 +4,22 @@ const productos= [
   {id: 3, name: "Pan", precio: 500},
 ];
 
+let name = prompt("Ingrese el nombre del producto el cual quiere aumentar");
+let encontrado = productos.find(producto => producto.name === name);
+let mensaje = `
+  nombre: ${encontrado.name}
+  $${encontrado.precio + encontrado.precio * 0.2}
+ `;
+
+  alert(mensaje);
+
+ 
+/* const productos= [
+  {id: 1, name: "chipa", precio: 1700},
+  {id: 2, name: "medialunas", precio: 100},
+  {id: 3, name: "Pan", precio: 500},
+];
+
 let cant = prompt ("cantidad de productos que desea agregar");
 let i = 1;
 while (i <=cant){
@@ -14,7 +30,7 @@ while (i <=cant){
     i=i+1;
 }
 
-console.log (productos);
+console.log (productos); */
 
 //alert(JSON.stringify(productos));
 
