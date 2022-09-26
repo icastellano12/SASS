@@ -1,4 +1,9 @@
-const productos= [
+const carrito = document.createElement ("img");
+carrito.src = "./imagenes/carros.png";
+document.getElementById("#menu").appendChild(carrito);
+
+
+/* const productos= [
   {id: 1, name: "chipa", precio: 1700},
   {id: 2, name: "medialunas", precio: 100},
   {id: 3, name: "Pan", precio: 500},
@@ -19,7 +24,7 @@ console.log(mensaje);
 
 //alert(mensaje);
 
-});
+}); */
 
 
 /* let name = prompt("Ingrese el nombre del producto que desea aumentar de precio");
