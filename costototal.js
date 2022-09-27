@@ -1,7 +1,6 @@
 const galeria = document.getElementById("galeria")
 console.log(galeria);
 
-
 let productos= [
   {nombre: "Chipa", precio: 1700, img: "../imagenes/Productos/IVA_9790.jpg"},
   {nombre: "Medialunas", precio: 100, img: "/imagenes/Productos/IVA_0063.jpg"},
@@ -9,7 +8,6 @@ let productos= [
   {nombre: "Pepas", precio: 1700, img: "/imagenes/Productos/pepas.jpg"},
   {nombre: "Alfajores", precio: 80, img: "/imagenes/Productos/IVA_9831.jpg"},
 ];
-
 
 productos.forEach (producto => {
 let productosVentas = document.createElement ("galeria");
