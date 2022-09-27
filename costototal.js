@@ -12,14 +12,12 @@ let productos= [
 productos.forEach (producto => {
 let productosVentas = document.createElement ("galeria");
  productosVentas.innerHTML = `
- <div class="row">
   <div class="card col-lg-4 col-md-6 col-sm-12">
     <img src="${producto.img}" class="card-img-top" alt="Galeria imagen">
       <div class="card-body">
         <p class="card-text"> ${producto.nombre}: $${producto.precio}</p>
         <a href="#" class="btn btn-primary">Comprar</a>
       </div>
-  </div>
   </div>
 `
 galeria.append(productosVentas);
