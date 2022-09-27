@@ -2,7 +2,7 @@ const galeria = document.getElementById("galeria")
 console.log(galeria);
 
 let productos= [
-  {nombre: "Chipa", precio: 1700, img: "../imagenes/Productos/IVA_9790.jpg"},
+  {nombre: "Chipa", precio: 1700, img: "/imagenes/Productos/IVA_9790.jpg"},
   {nombre: "Medialunas", precio: 100, img: "/imagenes/Productos/IVA_0063.jpg"},
   {nombre: "Pan", precio: 500, img: "/imagenes/Productos/pan.jpeg"  },
   {nombre: "Pepas", precio: 1700, img: "/imagenes/Productos/pepas.jpg"},
