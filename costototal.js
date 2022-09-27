@@ -1,7 +1,36 @@
-const carrito = document.createElement ("img");
-carrito.src = "./imagenes/carros.png";
-document.getElementById("#menu").appendChild(carrito);
+const galeria = document.getElementById("galeria")
+console.log(galeria);
 
+
+let productos= [
+  {nombre: "Chipa", precio: 1700, img: "../imagenes/Productos/IVA_9790.jpg"},
+  {nombre: "Medialunas", precio: 100, img: "/imagenes/Productos/IVA_0063.jpg"},
+  {nombre: "Pan", precio: 500, img: "/imagenes/Productos/pan.jpeg"  },
+  {nombre: "Pepas", precio: 1700, img: "/imagenes/Productos/pepas.jpg"},
+  {nombre: "Alfajores", precio: 80, img: "/imagenes/Productos/IVA_9831.jpg"},
+];
+
+
+productos.forEach (producto => {
+let productosVentas = document.createElement ("galeria");
+ productosVentas.innerHTML = `
+ <div class="row">
+  <div class="card col-lg-4 col-md-6 col-sm-12">
+    <img src="${producto.img}" class="card-img-top" alt="Galeria imagen">
+      <div class="card-body">
+        <p class="card-text"> ${producto.nombre}: $${producto.precio}</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+  </div>
+  </div>
+`
+galeria.append(productosVentas);
+})
+
+
+
+/* const nav =document.getElementById("img");
+nav.setAttribute("src","../imagenes/carrito-de-compras.png"); */
 
 /* const productos= [
   {id: 1, name: "chipa", precio: 1700},
