@@ -3,10 +3,10 @@ console.log(galeria);
 
 let productos= [
   {nombre: "Chipa", precio: 1700, img: "../imagenes/Productos/IVA_9790.jpg"},
-  {nombre: "Medialunas", precio: 100, img: "../imagenes/productos/IVA_0063.jpg"},
-  {nombre: "Pan", precio: 500, img: "../imagenes/productos/pan.jpeg"},
-  {nombre: "Pepas", precio: 1700, img: "../imagenes/productos/pepas.jpg"},
-  {nombre: "Alfajores", precio: 80, img: "../imagenes/productos/IVA_9831.jpg"},
+  {nombre: "Medialunas", precio: 100, img: "../imagenes/Productos/IVA_0063.jpg"},
+  {nombre: "Pan", precio: 500, img: "../imagenes/Productos/pan.jpeg"},
+  {nombre: "Pepas", precio: 1700, img: "../imagenes/Productos/pepas.jpg"},
+  {nombre: "Alfajores", precio: 80, img: "../imagenes/Productos/IVA_9831.jpg"},
 ];
 
 productos.forEach (producto => {
