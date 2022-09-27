@@ -19,9 +19,9 @@ let productosVentas = document.createElement ("galeria");
         <a href="#" class="btn btn-primary">Comprar</a>
       </div>
   </div>
-`
+`;
 galeria.append(productosVentas);
-})
+});
 
 
 
