@@ -1,27 +1,35 @@
-const galeria = document.getElementById("galeria")
-console.log(galeria);
+const galeria = document.getElementById("galeria");
 
 let productos= [
-  {nombre: "Chipa", precio: 1700, img: "../imagenes/Productos/IVA_9790.jpg"},
-  {nombre: "Medialunas", precio: 100, img: "../imagenes/Productos/IVA_0063.jpg"},
-  {nombre: "Pan", precio: 500, img: "../imagenes/Productos/pan.jpeg"},
-  {nombre: "Pepas", precio: 1700, img: "../imagenes/Productos/pepas.jpg"},
-  {nombre: "Alfajores", precio: 80, img: "../imagenes/Productos/IVA_9831.jpg"},
-];
+  {id: 1, nombre: "Chipa", precio: 1700, img: "../imagenes/Productos/IVA_9790.jpg"},
+  {id: 2, nombre: "Medialunas", precio: 100, img: "../imagenes/Productos/IVA_0063.jpg"},
+  {id: 3, nombre: "Pan", precio: 500, img: "../imagenes/Productos/pan.jpeg"},
+  {id: 4, nombre: "Pepas", precio: 1700, img: "../imagenes/Productos/pepas.jpg"},
+  {id: 5, nombre: "Alfajores", precio: 80, img: "../imagenes/Productos/IVA_9831.jpg"},
+]
+let carrito= []
+
 
 productos.forEach (producto => {
-let productosVentas = document.createElement ("galeria");
+let productosVentas = document.createElement("galeria");
  productosVentas.innerHTML = `
   <div class="card col-lg-4 col-md-6 col-sm-12">
     <img src="${producto.img}" class="card-img-top" alt="Galeria imagen">
       <div class="card-body">
         <p class="card-text"> ${producto.nombre}: $${producto.precio}</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <a  id =${producto.id} href="#" class="btn btn-primary">Comprar</a>
       </div>
   </div>
 `;
 galeria.append(productosVentas);
+const boton = document.getElementById(producto.id)
+boton.addEventListener("click", () => comprarproducto(producto))
 });
+
+const comprarproducto = (producto) =>  {
+  alert ("su producto se cargo al carrito")
+  console.log(producto);
+}  
 
 
 /* const nav =document.getElementById("img");
